@@ -62,20 +62,31 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-docker-初尝试" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-docker初次接触" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/12/23/docker-初尝试/" class="article-date">
-  <time datetime="2018-12-23T14:50:31.592Z" itemprop="datePublished">2018-12-23</time>
+    <a href="/2018/12/23/docker初次接触/" class="article-date">
+  <time datetime="2018-12-23T15:00:19.000Z" itemprop="datePublished">2018-12-23</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/23/docker初次接触/">docker初次接触</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>—什么是docker？<br>Docker可以认为是一种先进的容器技术。 docker它包含三个基本概念：镜像，容器和仓库<br>镜像是一个特殊的文件系统，相当于一个沙盒环境，它提供了容器运行的程序，库，资源，配置等。</p>
+        <p>—什么是docker？<br>Docker可以认为是一种先进的容器技术。<br>~<br>~<br>~<br>~<br>~<br>title: docker 初尝试<br>date: 2018-12-23 22:12:41<br>tags:<br>—什么是docker？<br>Docker可以认为是一种先进的容器技术。 docker它包含三个基本概念：镜像，容器和仓库<br>镜像是一个特殊的文件系统，相当于一个沙盒环境，它提供了容器运行的程序，库，资源，配置等。</p>
+<p>容器的实质是进程，容器进程运行于属于自己的独立的 命名空间。</p>
+<p>date: 2018-12-23 22:12:41<br>tags:<br>—什么是docker？<br>Docker可以认为是一种先进的容器技术。 docker它包含三个基本概念：镜像，容器和仓库<br>镜像是一个特殊的文件系统，相当于一个沙盒环境，它提供了容器运行的程序，库，资源，配置等。</p>
 <p>容器的实质是进程，容器进程运行于属于自己的独立的 命名空间。</p>
 <p>仓库用于存放镜像文件，通常，一个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。我们可以通过 &lt;仓库名&gt;:&lt;标签&gt; 的格式来指定具体是这个软件哪个版本的镜像。</p>
 <p>安装docker</p>
@@ -89,52 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/23/docker-初尝试/" data-id="cjq10pbxz0000aaqoxy240dp5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/23/hello-world/" class="article-date">
-  <time datetime="2018-12-23T13:51:47.148Z" itemprop="datePublished">2018-12-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/23/hello-world/" data-id="cjq10pby90001aaqo2ueik8qf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/23/docker初次接触/" data-id="cjq10u4ef0000eiqoafv5ud8i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -175,11 +141,7 @@
       <ul>
         
           <li>
-            <a href="/2018/12/23/docker-初尝试/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/12/23/hello-world/">Hello World</a>
+            <a href="/2018/12/23/docker初次接触/">docker初次接触</a>
           </li>
         
       </ul>
