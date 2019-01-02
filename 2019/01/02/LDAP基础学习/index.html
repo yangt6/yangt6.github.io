@@ -5,15 +5,21 @@
   
 
   
-  <title>Hexo</title>
+  <title>LDAP基础学习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="LDAP：Lightweight Directory Access Protocol，轻量目录访问协议,他主要用做用户信息查询（如邮箱、电话等）或对各种服务访问做后台认证以及用户数据权限管控。 名词解释DC：domain component一般为公司名，例如：dc=163,dc=comOU：organization unit为组织单元，最多可以有四级，每级最长32个字符，可以为中文CN：commo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LDAP基础学习">
+<meta property="og:url" content="http://yoursite.com/2019/01/02/LDAP基础学习/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="LDAP：Lightweight Directory Access Protocol，轻量目录访问协议,他主要用做用户信息查询（如邮箱、电话等）或对各种服务访问做后台认证以及用户数据权限管控。 名词解释DC：domain component一般为公司名，例如：dc=163,dc=comOU：organization unit为组织单元，最多可以有四级，每级最长32个字符，可以为中文CN：commo">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/01/02/LDAP基础学习/LDAP.jpg">
+<meta property="og:updated_time" content="2019-01-02T09:43:10.760Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="LDAP基础学习">
+<meta name="twitter:description" content="LDAP：Lightweight Directory Access Protocol，轻量目录访问协议,他主要用做用户信息查询（如邮箱、电话等）或对各种服务访问做后台认证以及用户数据权限管控。 名词解释DC：domain component一般为公司名，例如：dc=163,dc=comOU：organization unit为组织单元，最多可以有四级，每级最长32个字符，可以为中文CN：commo">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/02/LDAP基础学习/LDAP.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-LDAP基础学习" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-LDAP基础学习" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/02/LDAP基础学习/" class="article-date">
   <time datetime="2019-01-02T09:25:14.000Z" itemprop="datePublished">2019-01-02</time>
@@ -75,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/02/LDAP基础学习/">LDAP基础学习</a>
+    <h1 class="article-title" itemprop="name">
+      LDAP基础学习
     </h1>
   
 
@@ -98,58 +102,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-docker初次接触" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/23/docker初次接触/" class="article-date">
-  <time datetime="2018-12-23T15:00:19.000Z" itemprop="datePublished">2018-12-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/23/docker初次接触/">docker初次接触</a>
-    </h1>
+    <a href="/2018/12/23/docker初次接触/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">docker初次接触</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>—什么是docker？</p>
-<p>Docker可以认为是一种先进的容器技术。 docker它包含三个基本概念：镜像，容器和仓库<br>镜像是一个特殊的文件系统，相当于一个沙盒环境，它提供了容器运行的程序，库，资源，配置等。</p>
-<p>容器的实质是进程，容器进程运行于属于自己的独立的 命名空间。</p>
-<p>仓库用于存放镜像文件，通常，一个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。我们可以通过 &lt;仓库名&gt;:&lt;标签&gt; 的格式来指定具体是这个软件哪个版本的镜像。</p>
-<p>安装docker</p>
-<p>执行命令：<br>$ curl -fsSL get.docker.com -o get-docker.sh<br>$ sudo sh get-docker.sh –mirror Aliyun</p>
-<p>启动docker命令：<br>$ sudo systemctl enable docker<br>$ sudo systemctl start docker</p>
-<p>测试 Docker 是否安装正确：<br>$ docker run hello-world<br>执行代码：<br>Hello from Docker!<br>。。。。/略</p>
-<p>成功</p>
-<p>可以使用docker images查看</p>
-<p>接下来尝试使用docker搭建一个nginx的web服务器<br>docker search nginx #查询nginx相关镜像文件<br>docker pull nginx #拉取镜像文件到本地<br>docker run –name webserver -d -p 80:80 nginx #启动nginx服务器，并且映射了80端口<br>打开浏览器输入自己的ip地址就可以访问了</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/23/docker初次接触/" data-id="cjqezvag90001vuqouy24ra4a" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
